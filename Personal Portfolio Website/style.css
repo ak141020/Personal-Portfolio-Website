@@ -1,0 +1,179 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-image: url(image/kraft-paper.jpg);
+  background-color: #ff9800;
+}
+
+header {
+  background: #333;
+  padding: 15px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a.active, .nav-links a:hover {
+  color: #ff9800;
+}
+
+.home h1
+{
+  color: #181818df;
+}
+
+.home p
+{
+  color: #edb419;
+  background-color: #3f3d37;
+}
+
+.home img
+{
+    position: relative;
+     width: 95px;
+     top: 30px;
+     left: -1px;
+     transition: all 0.5s;
+}
+
+.home img:hover
+ {
+    transform: scale(1.4);
+    z-index: 2;
+ }
+
+.home, .about, .projects, .contact {
+  padding: 50px;
+  text-align: center;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin: 20px 0;
+}
+
+.project-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project-card {
+  width: 300px;
+  border: 3px solid #1d1c1c;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.project-card2 {
+  width: 300px;
+  border: 3px solid #131313;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.project-card3 {
+  width: 300px;
+  border: 3px solid #1b1a1a;
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+.project-card img
+{
+  position: relative;
+  width: 50px;
+  top: 18px;
+  left: -1px;
+  transition: all 0.5s;
+}
+
+.project-card2 img
+{
+  position: relative;
+  width: 50px;
+  top: 18px;
+  left: -1px;
+  transition: all 0.5s;
+}
+
+.project-card3 img
+{
+  position: relative;
+  width: 50px;
+  top: 18px;
+  left: -1px;
+  transition: all 0.5s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card2:hover {
+  transform: scale(1.05);
+}
+
+.project-card3:hover {
+  transform: scale(1.05);
+}
+
+.about p
+{
+  color: #edb419;
+  background-color: #3f3d37;
+}
+
+form {
+  max-width: 400px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  padding: 10px;
+  background: #333;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #ff9800;
+}
+
+@media (max-width: 768px) {
+  .project-gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+}
